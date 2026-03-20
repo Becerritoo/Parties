@@ -15,6 +15,8 @@ public class BukkitPartiesBootstrap extends ADPBukkitBootstrap {
 	private static void configureSlf4jSimpleLoggerDefaults() {
 		setIfAbsent("org.slf4j.simpleLogger.logFile", "System.out");
 		setIfAbsent("org.slf4j.simpleLogger.log.com.alessiodp.parties.libs.hikari", "warn");
+		setIfAbsent("com.alessiodp.parties.libs.slf4j.simpleLogger.logFile", "System.out");
+		setIfAbsent("com.alessiodp.parties.libs.slf4j.simpleLogger.log.com.alessiodp.parties.libs.hikari", "warn");
 	}
 
 	private static void setIfAbsent(String key, String value) {
